@@ -3,7 +3,7 @@ module DOM.Node.Types where
 
 import Prelude
 
-import DOM.Event.Types
+import DOM.Event.Types (EventTarget)
 
 import Unsafe.Coerce as U
 

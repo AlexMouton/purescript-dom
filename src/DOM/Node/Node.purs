@@ -1,6 +1,6 @@
 module DOM.Node.Node where
 
-import Prelude
+import Prelude (Unit, (<<<))
 
 import Control.Monad.Eff (Eff())
 
@@ -8,9 +8,9 @@ import Data.Enum (toEnum)
 import Data.Nullable (Nullable())
 import Data.Maybe.Unsafe as U
 
-import DOM
-import DOM.Node.NodeType
-import DOM.Node.Types
+import DOM (DOM)
+import DOM.Node.NodeType (NodeType)
+import DOM.Node.Types (Node, NodeList, Element, Document)
 
 -- | The type of a node.
 nodeType :: Node -> NodeType
