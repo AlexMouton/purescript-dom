@@ -18,7 +18,7 @@ import Prelude
 import Control.Monad.Eff (Eff())
 
 import Data.Enum (toEnum)
-import qualified Data.Maybe.Unsafe as U
+import Data.Maybe.Unsafe as U
 
 import DOM
 import DOM.Event.EventPhase

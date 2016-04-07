@@ -5,7 +5,7 @@ import Prelude
 
 import DOM.Event.Types
 
-import qualified Unsafe.Coerce as U
+import Unsafe.Coerce as U
 
 foreign import data Node :: *
 

@@ -158,7 +158,7 @@ import Data.Either (Either(..))
 import Data.Foreign (Foreign(), F(), unsafeReadTagged)
 import Data.Foreign.Class (IsForeign)
 
-import qualified Unsafe.Coerce as U
+import Unsafe.Coerce as U
 
 -- | Basic type for all DOM events.
 foreign import data Event :: *
