@@ -7,18 +7,18 @@ import DOM.XHR.Types
 import Prelude
 
 -- | Possible values of a `FormData`.
-data FormDataValue = 
+data FormDataValue =
 	  FormDataString String
 	| FormDataFile String File -- ^ File name and `File` object.
 	| FormDataBlob String Blob -- ^ Blob name and `Blob` object.
 
--- | Convert an associated array of keys and values to a `FormData`. 
+-- | Convert an associated array of keys and values to a `FormData`.
 toFormData :: forall f . (Foldable f) => f (Tuple String FormDataValue) -> FormData
 toFormData dat =
 	let form = newFormData unit in
 	let _unit = foldMap (appendData form) dat in
 	form
-	
+
 	where
 		appendData form (Tuple key (FormDataString val)) = appendString form key val
 		appendData form (Tuple key (FormDataFile name val)) = appendWithName form key val name
