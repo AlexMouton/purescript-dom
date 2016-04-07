@@ -156,7 +156,7 @@ import Prelude
 
 import Data.Either (Either(..))
 import Data.Foreign (Foreign(), F(), unsafeReadTagged)
-import Data.Foreign.Class (IsForeign)
+import Data.Foreign.Class (class IsForeign)
 
 import Unsafe.Coerce as U
 

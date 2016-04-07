@@ -211,7 +211,7 @@ import Prelude ((<<<))
 
 import Data.Either (Either(..))
 import Data.Foreign (Foreign(), F(), ForeignError(..), unsafeReadTagged)
-import Data.Foreign.Class (IsForeign)
+import Data.Foreign.Class (class IsForeign)
 
 import DOM.Event.Types
 import DOM.Node.Types

@@ -2,7 +2,7 @@ module DOM.HTML.HTMLMediaElement.NetworkState (NetworkState(..)) where
 
 import Prelude
 import Data.Maybe (Maybe(..))
-import Data.Enum (Enum, Cardinality(..), defaultSucc, defaultPred)
+import Data.Enum (class Enum, Cardinality(..), defaultSucc, defaultPred)
 
 data NetworkState
   = NETWORK_EMPTY

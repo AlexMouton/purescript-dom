@@ -2,7 +2,7 @@ module DOM.Event.EventPhase (EventPhase(..)) where
 
 import Prelude
 
-import Data.Enum (Enum, Cardinality(..), defaultSucc, defaultPred)
+import Data.Enum (class Enum, Cardinality(..), defaultSucc, defaultPred)
 import Data.Maybe (Maybe(..))
 
 data EventPhase
